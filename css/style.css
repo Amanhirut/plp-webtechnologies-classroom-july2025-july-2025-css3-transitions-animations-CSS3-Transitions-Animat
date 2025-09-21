@@ -1,0 +1,57 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/* Part 1: CSS Transitions and Animations */
+.btn {
+  background: #6200ea;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.btn:hover {
+  background: #3700b3;
+  transform: scale(1.1);
+}
+
+/* Keyframe Animation */
+.animated-box {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background: coral;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); background: coral; }
+  50% { transform: scale(1.2); background: tomato; }
+  100% { transform: scale(1); background: coral; }
+}
+
+/* Part 3: Box that animates on click */
+.box-to-animate {
+  width: 100px;
+  height: 100px;
+  background: teal;
+  margin: 20px auto;
+  transition: transform 1s ease, background 1s ease;
+}
+
+/* Class added dynamically by JavaScript */
+.animate {
+  transform: rotate(360deg) scale(1.2);
+  background: gold;
+}
